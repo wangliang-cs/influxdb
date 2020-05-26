@@ -30,7 +30,7 @@ const EndpointsColumn: FC<Props> = ({router, params, endpoints}) => {
       <br />
       to a third party service that can receive notifications
       <br />
-      like Slack, PagerDuty, or an HTTP server
+      like Slack, PagerDuty, Telegram, or an HTTP server
       <br />
       <br />
       <a

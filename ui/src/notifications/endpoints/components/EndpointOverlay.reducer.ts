@@ -61,6 +61,12 @@ export const reducer = (
               url: DEFAULT_ENDPOINT_URLS.slack,
               token: '',
             }
+          case 'telegram':
+            return {
+              ...baseProps,
+              type: 'telegram',
+              token: '',
+            }
         }
       }
       return state
