@@ -128,6 +128,20 @@ func NewLabelPackage() BoolFlag {
 	return newLabels
 }
 
+var hydratevars = MakeBoolFlag(
+	"New Hydrate Vars Functionality",
+	"hydratevars",
+	"Ariel Salem / Monitoring Team",
+	false,
+	Temporary,
+	false,
+)
+
+// NewHydrateVarsFunctionality - Enables a minimalistic variable hydration
+func NewHydrateVarsFunctionality() BoolFlag {
+	return hydratevars
+}
+
 var all = []Flag{
 	appMetrics,
 	backendExample,
@@ -138,6 +152,7 @@ var all = []Flag{
 	sessionService,
 	pushDownGroupAggregateCount,
 	newLabels,
+	hydratevars,
 }
 
 var byKey = map[string]Flag{
@@ -150,4 +165,5 @@ var byKey = map[string]Flag{
 	"sessionService":               sessionService,
 	"pushDownGroupAggregateCount":  pushDownGroupAggregateCount,
 	"newLabels":                    newLabels,
+	"hydratevars":                  hydratevars,
 }
